@@ -68,7 +68,6 @@ unsigned int faStr3(const char *str) {
    int i = 0;
 	int count = 0;
 	int countLiteres = 0;
-	string str = "Hel5lo dm1t7ri a am Yo4u Fat2her bi241ch1";
 	while (str[i] != '\0')
 	{
 		if (str[i] != ' ')
