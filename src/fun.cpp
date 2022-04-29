@@ -43,7 +43,7 @@ unsigned int faStr2(const char *str) {
 				count += 1;
 				while (str[i] != '\0' && str[i] != ' ')
 				{
-					if (isdigit(str[i]) == 0)
+					if (isdigit(str[i]) == 0 && ispunct(str[i]) == 0)
 					{
 						i++;
 						
