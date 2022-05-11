@@ -7,7 +7,7 @@ int count = 0;
 while (str[i] != '\0') {
 if (str[i] != ' ') {
 count += 1;
-while (str[i]  !=  ' ' && str[i]!='\0') {
+while (str[i] != ' ' && str[i] != '\0') {
 if (isdigit(str[i]) == 0) {
 i++;
 } else {
@@ -18,7 +18,7 @@ i++;
 break;
 }
 }
-} else i++;	
+ } else i++;
 }
 return count;
 }
@@ -39,7 +39,7 @@ count -= 1;
 break;
 }
 }
-} else { while (str[i] != ' '&& str[i]!='\0') { i++; } }
+} else { while (str[i] != ' '&& str[i] != '\0') { i++; } }
 } else i++;
 }
 return count;
