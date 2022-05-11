@@ -18,8 +18,7 @@ i++;
 break;
 }
 }
-}
-else
+} else
 i++;
 }
 return count;
@@ -41,8 +40,7 @@ count -= 1;
 break;
 }
 }
-}
-else {
+} else {
 while (str[i] != ' '&& str[i] != '\0') { i++; } }
 } else i++;
 }
