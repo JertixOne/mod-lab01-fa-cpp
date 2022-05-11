@@ -18,8 +18,8 @@ i++;
 break;
 }
 }
-} else
-i++;
+} else {
+i++; }
 }
 return count;
 }
@@ -42,7 +42,8 @@ break;
 }
 } else {
 while (str[i] != ' '&& str[i] != '\0') { i++; } }
-} else i++;
+} else {
+i++; }
 }
 return count;
 }
@@ -58,9 +59,8 @@ while (str[i] != ' ' && str[i] != '\0') {
 countLiteres++;
 i++;
 }
-}
-else
-i++;	
+} else {
+i++; }
 }
 return countLiteres/count;
 }
