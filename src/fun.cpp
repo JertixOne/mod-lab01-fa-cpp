@@ -5,13 +5,12 @@ unsigned int faStr1(const char *str) {
 int i = 0;
 int count = 0;
 while (str[i] != '\0') {
-if (str[i] != ' ') {	
- count += 1;
-while (str[i] != ' ' && str[i]!='\0') {
+if (str[i] != ' ') {
+count += 1;
+while (str[i]  !=  ' ' && str[i]!='\0') {
 if (isdigit(str[i]) == 0) {
 i++;
-}
-else {
+} else {
 count -= 1;
 while (str[i] != ' ' && str[i] != '\0') {
 i++;
@@ -19,8 +18,7 @@ i++;
 break;
 }
 }
-}
-else i++;	
+} else i++;	
 }
 return count;
 }
@@ -36,16 +34,13 @@ count += 1;
 while (str[i] != '\0' && str[i] != ' ') {
 if (isdigit(str[i]) == 0 && ispunct(str[i]) == 0) {
 i++;
-}
-else {
+} else {
 count -= 1;
 break;
 }
 }
-}
-else { while (str[i] != ' '&& str[i]!='\0') { i++; } }
-}
-else i++;
+} else { while (str[i] != ' '&& str[i]!='\0') { i++; } }
+} else i++;
 }
 return count;
 }
@@ -61,8 +56,7 @@ while (str[i] != ' ' && str[i] != '\0') {
 countLiteres++;
 i++;
 }
-}
-else i++;	
+} else i++;	
 }
 return countLiteres/count;
 }
